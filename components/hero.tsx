@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
 import { ArchitectureMap } from "@/components/architecture-map";
 import { Reveal } from "@/components/motion";
 import { Button } from "@/components/ui";
@@ -10,7 +10,7 @@ export function Hero() {
       <Reveal>
         <div className="inline-flex items-center gap-2 rounded-md border border-line bg-white/[0.045] px-3 py-2 font-mono text-xs text-aqua">
           <span className="size-2 rounded-full bg-aqua" />
-          Available for Cloud, DevOps, AI DevOps, and Platform Engineering roles
+          Cloud infrastructure · DevOps · AWS
         </div>
         <h1 className="mt-6 text-balance text-5xl font-semibold tracking-normal text-cloud sm:text-6xl lg:text-7xl">
           {profile.name}
@@ -21,14 +21,6 @@ export function Hero() {
           <Button href={profile.resumePath} variant="primary">
             <Download className="size-4" />
             Resume
-          </Button>
-          <Button href={profile.github}>
-            <Github className="size-4" />
-            GitHub
-          </Button>
-          <Button href={profile.linkedin}>
-            <Linkedin className="size-4" />
-            LinkedIn
           </Button>
           <Button href={`mailto:${profile.email}`} variant="ghost">
             <Mail className="size-4" />

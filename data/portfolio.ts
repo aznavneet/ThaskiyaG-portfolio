@@ -25,11 +25,10 @@ import {
 export const profile = {
   name: "Thaskiya Sulthana G",
   title: "Cloud & DevOps Engineer",
-  headline:
-    "Highly skilled Cloud and DevOps Engineer with 9+ years of experience in designing, deploying, and managing scalable infrastructure on AWS, leveraging Terraform for infrastructure-as-code automation. With AWS Certified Solutions Architect - Associate certification, leveraging expertise in designing and deploying scalable, secure, and efficient cloud architectures that drive business success",
-  summary:
-    "Highly skilled Cloud and DevOps Engineer with 9+ years of experience in designing, deploying, and managing scalable infrastructure on AWS, leveraging Terraform for infrastructure-as-code automation. With AWS Certified Solutions Architect - Associate certification, leveraging expertise in designing and deploying scalable, secure, and efficient cloud architectures that drive business success. Expertise in Amazon Web Services (AWS) environment and good knowledge of AWS services like, VPC, EC2, S3, Elastic Load-balancers, Cloud Front, Autoscaling Groups (ASG), Elastic Block Storage, RDS, IAM, CloudFormation, Athena, CloudWatch, Elastic File System, Lambda, Cloud Trail, Control Tower, AWS Organization, Code Build. I used IAM to create new accounts, roles and groups. Used Auto scaling and Elastic Load Balancer features on EC2 instances to serve the end users using applications during unexpected traffic/demand. Configuring IAM roles for EC2 instances and assigns them policies granting specific level access to S3 buckets. Configured S3 Buckets for EBS backed Snapshots, versioning for data backups and setting up lifecycle management policies. Using Cloud Watch service, created alarms for monitoring the EC2 server’s performance like CPU Utilization, disk usage etc. Implemented Auto Scaling for high application availability. Created elastic load-balancers (ELB) for different applications. Utilized Amazon Route53 to manage DNS zones, assign public DNS names to elastic load balancers IPs. Created and worked on Elastic Block Store and Instance Store Volumes. Configured NAT instance for internal servers within the private subnets thereby not being exposed to the public internet. Used Elastic Load balancer, Auto scaling, Security groups and NACL’s to manage network security. Configuring of Virtual Private Cloud (VPC) with networking of subnets containing servers. Creating VPC, ELB, etc. through CloudFormation stack.",
+  headline: "Cloud and DevOps Engineer with 9+ years of experience building and managing AWS infrastructure, automating delivery, and supporting scalable applications.",
+  summary: "Cloud and DevOps Engineer with 9+ years of experience designing and managing AWS infrastructure. Experienced in Terraform-based provisioning, CI/CD with Jenkins and GitHub Actions, and containerized applications using Docker and Kubernetes. AWS Certified Solutions Architect - Associate.",
   email: "thaskiyasulthanasifu@gmail.com",
+  phone: "9113873649 / 7760530393",
   github: "",
   linkedin: "",
   location: "Bangalore, India",
@@ -41,8 +40,6 @@ export const navItems = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "Research", href: "#research" },
-  { label: "GitHub", href: "#github" },
   { label: "Resume", href: "#resume" },
   { label: "Contact", href: "#contact" }
 ];
@@ -86,7 +83,7 @@ export const skillGroups = [
     skills: ["Bash", "Python (Basic)"]
   },
   {
-    title: "VPC CMS Tools",
+    title: "ITSM & Virtualization Tools",
     icon: Braces,
     skills: ["BMC Helix", "Citrix", "Service Now"]
   },
@@ -200,9 +197,9 @@ export const flagshipProject = {
 
 export const certifications = [
   {
-    name: "AWS Solution Architect – Associate (Global certification)",
+    name: "AWS Solutions Architect - Associate",
     issuer: "Amazon Web Services",
-    date: "Verified",
+    date: "Global certification",
     credlyUrl: "",
     icon: Award
   }
@@ -256,3 +253,5 @@ export const infraNodes = [
   { label: "Security", icon: ShieldCheck, x: "32%", y: "73%" },
   { label: "Terminal", icon: Terminal, x: "12%", y: "76%" }
 ];
+
+

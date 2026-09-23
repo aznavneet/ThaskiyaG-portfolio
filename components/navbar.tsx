@@ -1,6 +1,6 @@
 "use client";
 
-import { Command, Github, Linkedin, Menu, Moon, X } from "lucide-react";
+import { Command, Menu, Moon, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { navItems, profile } from "@/data/portfolio";
@@ -15,7 +15,7 @@ export function Navbar({ onCommand }: { onCommand: () => void }) {
       <div className="section-shell flex h-16 items-center justify-between">
         <Link href="#" className="focus-ring flex items-center gap-3 rounded-md">
           <span className="flex size-9 items-center justify-center rounded-md border border-line bg-white/[0.06] font-mono text-sm font-bold text-aqua">
-            NB
+            TG
           </span>
           <span className="hidden text-sm font-semibold text-cloud sm:block">{profile.name}</span>
         </Link>
@@ -30,12 +30,6 @@ export function Navbar({ onCommand }: { onCommand: () => void }) {
               {item.label}
             </Link>
           ))}
-          <Link
-            href="https://medium.com/@navneetbhardwaj935"
-            className="focus-ring rounded-md px-3 py-2 text-sm text-mist transition hover:bg-white/[0.055] hover:text-cloud"
-          >
-            Blog
-          </Link>
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
@@ -47,20 +41,6 @@ export function Navbar({ onCommand }: { onCommand: () => void }) {
           >
             <Command className="size-4" />
           </button>
-          <Link
-            href={profile.github}
-            className="focus-ring inline-flex size-10 items-center justify-center rounded-md border border-line bg-white/[0.045] text-mist transition hover:text-cloud"
-            aria-label="GitHub"
-          >
-            <Github className="size-4" />
-          </Link>
-          <Link
-            href={profile.linkedin}
-            className="focus-ring inline-flex size-10 items-center justify-center rounded-md border border-line bg-white/[0.045] text-mist transition hover:text-cloud"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="size-4" />
-          </Link>
           <span
             className="inline-flex size-10 items-center justify-center rounded-md border border-line bg-white/[0.025] text-mist"
             aria-label="Dark theme enabled"
@@ -93,13 +73,6 @@ export function Navbar({ onCommand }: { onCommand: () => void }) {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="https://medium.com/@navneetbhardwaj935"
-              onClick={() => setOpen(false)}
-              className="focus-ring rounded-md px-3 py-3 text-sm text-mist hover:bg-white/[0.055] hover:text-cloud"
-            >
-              Blog
-            </Link>
           </div>
         </div>
       </div>

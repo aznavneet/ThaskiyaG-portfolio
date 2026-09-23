@@ -17,7 +17,7 @@ export function ResumeSection() {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="h-[680px] overflow-hidden rounded-lg border border-line bg-ink/70">
-              <iframe src={profile.resumePath} title="Navneet Bhardwaj resume" className="h-full w-full" />
+              <iframe src={profile.resumePath} title="Thaskiya Sulthana G CV" className="h-full w-full" />
             </div>
           </Reveal>
         </div>

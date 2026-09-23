@@ -5,9 +5,7 @@ import { ContactSection } from "@/components/contact-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { FeaturedProject } from "@/components/featured-project";
 import { Footer } from "@/components/footer";
-import { GitHubSection } from "@/components/github-section";
 import { Hero } from "@/components/hero";
-import { ResearchSection } from "@/components/research-section";
 import { ResumeSection } from "@/components/resume-section";
 import { SkillsSection } from "@/components/skills-section";
 import { profile, skillGroups } from "@/data/portfolio";
@@ -38,8 +36,6 @@ export default function Home() {
         <SkillsSection />
         <ExperienceSection />
         <FeaturedProject />
-        <GitHubSection />
-        <ResearchSection />
         <CertificationsSection />
         <ResumeSection />
         <ContactSection />

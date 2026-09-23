@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import Link from "next/link";
 import { CopyEmail } from "@/components/copy-email";
 import { Reveal } from "@/components/motion";
@@ -12,22 +12,15 @@ export function ContactSection() {
     <section id="contact" className="section-shell py-20">
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
         <Reveal>
-          <SectionHeading eyebrow="Contact" title="For cloud, platform, DevOps, AI DevOps, Kubernetes, AWS, and Platform Engineering roles.">
-            Reach out directly by email, LinkedIn, or GitHub.
+          <SectionHeading eyebrow="Contact" title="Cloud and DevOps opportunities">
+            Reach out directly by email or phone.
           </SectionHeading>
           <div className="mt-8 grid gap-3 text-sm text-mist">
             <Link href={`mailto:${profile.email}`} className="focus-ring flex items-center gap-3 rounded-md p-2 hover:bg-white/[0.05] hover:text-cloud">
               <Mail className="size-4 text-aqua" />
               {profile.email}
             </Link>
-            <Link href={profile.github} className="focus-ring flex items-center gap-3 rounded-md p-2 hover:bg-white/[0.05] hover:text-cloud">
-              <Github className="size-4 text-aqua" />
-              github.com/aznavneet
-            </Link>
-            <Link href={profile.linkedin} className="focus-ring flex items-center gap-3 rounded-md p-2 hover:bg-white/[0.05] hover:text-cloud">
-              <Linkedin className="size-4 text-aqua" />
-              LinkedIn profile
-            </Link>
+            <a href="tel:9113873649" className="focus-ring flex items-center gap-3 rounded-md p-2 hover:bg-white/[0.05] hover:text-cloud"><Phone className="size-4 text-aqua" />{profile.phone}</a>
             <span className="flex items-center gap-3 rounded-md p-2">
               <MapPin className="size-4 text-aqua" />
               {profile.location}

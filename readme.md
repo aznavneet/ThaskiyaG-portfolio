@@ -1,2 +1,2 @@
 # ThaskiyaG-portfolio
-ThaskiyaG-portfolio
+ThaskiyaG-portfolio.
